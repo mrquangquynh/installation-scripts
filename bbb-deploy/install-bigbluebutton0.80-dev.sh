@@ -16,8 +16,8 @@ git checkout -b my-bbb-branch v0.8
 
 git status
 
-cd ../..
-bbb-conf --setup-dev client
+cd 
+video-conf --setup-dev client
 
 sudo mv ~/dev/bigbluebutton/bigbluebutton-client/src ~/dev/bigbluebutton/bigbluebutton-client/src.old
 sudo mv ~/dev/bigbluebutton/bigbluebutton-client/locale ~/dev/bigbluebutton/bigbluebutton-client/locale.old
