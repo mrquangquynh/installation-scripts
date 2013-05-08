@@ -44,7 +44,7 @@ cd installation-scripts/bbb-deploy/
 chmod +x install-bigbluebutton0.80.sh
 ./install-bigbluebutton0.80.sh
 
-sudo bbbo-conf --setip $1
+sudo video-conf --setip $1
 
 chmod +x install-bigbluebutton0.80-dev.sh
 ./install-bigbluebutton0.80-dev.sh
