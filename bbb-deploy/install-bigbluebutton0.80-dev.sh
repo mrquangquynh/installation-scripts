@@ -41,7 +41,7 @@ sudo mv ~/Script_install_video/bbb-dev0.80/client.html ~/dev/bigbluebutton/bigbl
 sudo mv ~/dev/bigbluebutton/bigbluebutton-client/bin/BigBlueButton.swf ~/dev/bigbluebutton/bigbluebutton-client/bin/video.swf
 
 
-
+video-conf --setip 192.168.1.14:80
 
 #Chuyển về BBB thường dùng   :
 #              $   sudo ln -s -f /etc/bigbluebutton/nginx/client /etc/bigbluebutton/nginx/client.nginx
