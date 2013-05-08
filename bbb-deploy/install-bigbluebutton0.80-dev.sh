@@ -19,6 +19,7 @@ git status
 cd 
 sudo video-conf --setup-dev client
 
+wget https://raw.github.com/mrquangquynh/installation-scripts/master/bbb-deploy/install-bigbluebutton0.80-dev_part1.sh
 chmod +x install-bigbluebutton0.80-dev_part1.sh
 ./install-bigbluebutton0.80-dev_part1.sh
 
@@ -29,11 +30,12 @@ ant locales
 
 cd 
 
+wget https://raw.github.com/mrquangquynh/installation-scripts/master/bbb-deploy/install-bigbluebutton0.80-dev_part2.sh
 chmod +x install-bigbluebutton0.80-dev_part2.sh
 ./chmod +x install-bigbluebutton0.80-dev_part2.sh
 
 
-sudo video-conf --setip 192.168.1.14:80
+sudo video-conf --setip IP or HOST:PORT
 
 #Chuyển về BBB thường dùng   :
 #              $   sudo ln -s -f /etc/bigbluebutton/nginx/client /etc/bigbluebutton/nginx/client.nginx
