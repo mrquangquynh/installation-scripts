@@ -43,7 +43,12 @@ sudo mv ~/dev/bigbluebutton/bigbluebutton-client/bin/BigBlueButton.swf ~/dev/big
 
 
 
-
+#Chuyển về BBB thường dùng   :
+#              $   sudo ln -s -f /etc/bigbluebutton/nginx/client /etc/bigbluebutton/nginx/client.nginx
+#              $   sudo /etc/init.d/nginx restart     
+#Chuyển về BBB-dev : 
+#              $  sudo ln -s -f /etc/bigbluebutton/nginx/client_dev /etc/bigbluebutton/nginx/client.nginx
+#              $  sudo /etc/init.d/nginx restart  
 
 
 
