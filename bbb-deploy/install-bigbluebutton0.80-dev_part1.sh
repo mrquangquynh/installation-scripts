@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo video-conf --setup-dev client
+
 
 sudo mv ~/dev/bigbluebutton/bigbluebutton-client/src ~/dev/bigbluebutton/bigbluebutton-client/src.old
 sudo mv ~/dev/bigbluebutton/bigbluebutton-client/locale ~/dev/bigbluebutton/bigbluebutton-client/locale.old
