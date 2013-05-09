@@ -37,28 +37,28 @@ sudo apt-get update > /dev/null
 sudo apt-get -y dist-upgrade
 sudo apt-get -y install bigbluebutton bbb-demo
 
-#-----------------------Xoa Freeswitch luc khoi dong--------------------
+echo "#-----------------------Xoa Freeswitch luc khoi dong--------------------"
 sudo /etc/init.d/bbb-freeswitch stop
 sudo update-rc.d -f bbb-freeswitch remove
 
-#-----------------------Thay file bbb-conf = video-conf --------------------
+echo "#-----------------------Thay file bbb-conf = video-conf --------------------"
 sudo mv /usr/local/bin/bbb-conf /usr/local/bin/bbb-conf.old 
 sudo mv ~/Script_install_video/video-conf /usr/local/bin/
 sudo chmod 755 /usr/local/bin/video-conf
 
-#-----------------------Thay file red5 co freeswitch = red5 khoi dong ko co freeswitch --------------------
+echo "#-----------------------Thay file red5 co freeswitch = red5 khoi dong ko co freeswitch --------------------"
 sudo mv /etc/init.d/red5 /etc/init.d/red5.old
 sudo mv ~/Script_install_video/red5 /etc/init.d/
 sudo chmod 755 /etc/init.d/red5
 
-#-----------------------Them file conect mysql --------------------
+echo "#-----------------------Them file conect mysql --------------------"
 sudo mv ~/Script_install_video/mysql-connector-java-5.1.10.jar /usr/share/tomcat6/lib/
 
-#-----------------------Them Font VNi ------------------------------
+echo "#-----------------------Them Font VNi ------------------------------"
 sudo cp -r ~/Script_install_video/windows /usr/share/fonts/truetype/
 sudo sudo fc-cache -f -v
 
-#-----------------------Them File Demo/login------------------------------
+echo "#-----------------------Them File Demo/login------------------------------"
 sudo mv ~/Script_install_video/login /var/lib/tomcat6/webapps/demo/
 sudo cp /var/lib/tomcat6/webapps/demo/bbb_api.jsp /var/lib/tomcat6/webapps/demo/login/
 sudo cp /var/lib/tomcat6/webapps/demo/bbb_api_conf.jsp /var/lib/tomcat6/webapps/demo/login/
@@ -73,19 +73,19 @@ sudo rm /var/lib/tomcat6/webapps/demo/pdfs
 sudo rm /var/lib/tomcat6/webapps/demo/polling.gif
 sudo rm /var/lib/tomcat6/webapps/demo/BigBlueButton.pptx
 
-#-----------------------Them File Demo/login------------------------------
+echo "#-----------------------Them File Demo/login------------------------------"
 
 sudo mv /var/www/bigbluebutton-default /var/www/bigbluebutton-default.old
 sudo mv ~/Script_install_video/bigbluebutton-default /var/www/
 
-#------------------------Sua file bigbluebutton.properties----------------
+echo "#------------------------Sua file bigbluebutton.properties----------------"
 
 sudo mv /var/lib/tomcat6/webapps/bigbluebutton/WEB-INF/classes/bigbluebutton.properties /var/lib/tomcat6/webapps/bigbluebutton/WEB-INF/classes/bigbluebutton.properties.old
 sudo mv ~/Script_install_video/bigbluebutton.properties /var/lib/tomcat6/webapps/bigbluebutton/WEB-INF/classes/bigbluebutton.properties
 sudo video-conf --salt
 
 
-#-------------------------Doi client --> bkippbx (ben Setup)-----------------------
+echo "#-------------------------Doi client --> bkippbx (ben Setup)-----------------------"
 
 sudo mv /var/www/bigbluebutton/client /var/www/bigbluebutton/bkippbx
 sudo mv /etc/bigbluebutton/nginx/client /etc/bigbluebutton/nginx/client.old
