@@ -85,8 +85,13 @@ sudo mv ~/Script_install_video/bigbluebutton.properties /var/lib/tomcat6/webapps
 sudo video-conf --salt
 
 
+#-------------------------Doi client --> bkippbx (ben Setup)-----------------------
 
-
+sudo mv /var/www/bigbluebutton/client /var/www/bigbluebutton/bkippbx
+sudo mv /etc/bigbluebutton/nginx/client /etc/bigbluebutton/nginx/client.old
+sudo mv ~/Script_install_video/client /etc/bigbluebutton/nginx/
+sudo chmod 755 /etc/bigbluebutton/nginx/client
+ 
 
 
 
