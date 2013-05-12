@@ -34,7 +34,7 @@ wget http://ubuntu.bigbluebutton.org/bigbluebutton.asc -O- | sudo apt-key add -
 #------------------------Cai dat BBB 0.8------------------------------------------------
 echo "Updating the Ubuntu package repository"
 sudo apt-get update > /dev/null
-sudo apt-get -y dist-upgrade
+#sudo apt-get -y dist-upgrade
 sudo apt-get -y install bigbluebutton bbb-demo
 
 echo "#-----------------------Xoa Freeswitch luc khoi dong--------------------"
