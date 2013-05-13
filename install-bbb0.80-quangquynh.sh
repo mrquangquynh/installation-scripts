@@ -29,8 +29,8 @@ fi
 echo "Updating the Ubuntu package repository"
 if [ -f download_bbb32-64b.zip ]; then
 	unzip download_bbb32-64b.zip
-	cp -r ~/download_bbb32-64b/var_cache_apt_archives /var/cache/apt/archives/
-	cp -r ~/download_bbb32-64b/var_lib_apt_lists /var/lib/apt/lists/
+	sudo cp -r ~/download_bbb32-64b/var_cache_apt_archives /var/cache/apt/archives/
+	sudo cp -r ~/download_bbb32-64b/var_lib_apt_lists /var/lib/apt/lists/
 fi
 
 
