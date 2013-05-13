@@ -25,6 +25,19 @@ then
 	print_usage
 fi
 
+
+echo "Updating the Ubuntu package repository"
+if [ -f download_bbb32-64b.zip ]; then
+	unzip download_bbb32-64b.zip
+fi
+sudo cp -r ~/download_bbb32-64b/archives
+
+if [ -f Script_install_video.zip ]; then
+	unzip Script_install_video.zip
+fi
+
+
+
 echo "Updating the Ubuntu package repository"
 sudo apt-get -y update
 sudo apt-get -y install mysql-server
