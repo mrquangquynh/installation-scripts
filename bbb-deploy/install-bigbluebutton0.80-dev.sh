@@ -13,7 +13,7 @@ echo "#------------cd ~/dev-----------------"
 cd ~/dev
 
 echo "#------------git clone github.com/.../.../-----------------"
-git clone https://github.com/bigbluebutton/bigbluebutton
+git clone https://github.com/quangquynh-bbb081/bigbluebutton
 
 echo "#------------cd ~/dev/bigbluebutton-----------------"
 cd ~/dev/bigbluebutton
