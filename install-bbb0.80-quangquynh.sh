@@ -46,10 +46,10 @@ chmod +x install-bigbluebutton0.80.sh
 
 sudo video-conf --setip $1
 
-#chmod +x install-bigbluebutton0.80-dev.sh
-#./install-bigbluebutton0.80-dev.sh
+chmod +x install-bigbluebutton0.80-dev.sh
+./install-bigbluebutton0.80-dev.sh
 
-#sudo video-conf --setip $1
+sudo video-conf --setip $1
 
 echo "Restart the server to finish the installation"
 echo "It will take a while to start the live notes server, please be patient"
