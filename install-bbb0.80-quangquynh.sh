@@ -29,12 +29,12 @@ fi
 echo "Updating the Ubuntu package repository"
 if [ -f download_bbb32-64b.zip ]; then
 	unzip download_bbb32-64b.zip
+	cp -r ~/download_bbb32-64b/var_cache_apt_archives /var/cache/apt/archives/
+	cp -r ~/download_bbb32-64b/var_lib_apt_lists /var/lib/apt/lists/
 fi
-sudo cp -r ~/download_bbb32-64b/archives
 
-if [ -f Script_install_video.zip ]; then
-	unzip Script_install_video.zip
-fi
+
+
 
 
 
