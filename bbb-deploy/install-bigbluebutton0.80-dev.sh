@@ -2,27 +2,26 @@
 
 
 #Cac buoc cai dat BBB0.8 DEV
-
 video-conf --setup-dev tools
 
-echo "------------source ~/.profile-----------------"
-
+echo "#------------source ~/.profile-----------------"
 source ~/.profile
 
-echo "------------git clone github.com/.../.../-----------------"
 
 
+echo "#------------cd ~/dev-----------------"
 cd ~/dev
 
+echo "#------------git clone github.com/.../.../-----------------"
 git clone https://github.com/bigbluebutton/bigbluebutton
 
-echo "------------git status - checkout -----------------"
-
+echo "#------------cd ~/dev/bigbluebutton-----------------"
 cd ~/dev/bigbluebutton
 
+echo "#------------git checkout -----------------"
 git checkout -b my-bbb-branch v0.8
 
-
+echo "#------------setup-dev client-----------------"
 video-conf --setup-dev client
 
 echo "#-------------------------Thay doi code Devlopment-----------------------"
