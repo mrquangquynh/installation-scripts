@@ -88,6 +88,15 @@ sudo video-conf --salt
 echo "#-------------------------Doi client --> bkippbx (ben Setup)-----------------------"
 
 sudo mv /var/www/bigbluebutton/client /var/www/bigbluebutton/bkippbx
+sudo cp -r ~/Script_install_video/bbb-dev0.80/branding /var/www/bigbluebutton/bkippbx/
+sudo mv /var/www/bigbluebutton/bkippbx/conf /var/www/bigbluebutton/bkippbx/conf.old
+sudo cp -r ~/Script_install_video/bbb-dev0.80/conf /var/www/bigbluebutton/bkippbx/
+sudo mv /var/www/bigbluebutton/bkippbx/lib /var/www/bigbluebutton/bkippbx/lib.old
+sudo cp -r ~/Script_install_video/bbb-dev0.80/lib /var/www/bigbluebutton/bkippbx/
+sudo cp ~/Script_install_video/bbb-dev0.80/LayoutModule.swf /var/www/bigbluebutton/bkippbx/
+sudo cp ~/Script_install_video/bbb-dev0.80/video.html /var/www/bigbluebutton/bkippbx/
+sudo mv /var/www/bigbluebutton/bkippbx/BigBlueButton.swf /var/www/bigbluebutton/bkippbx/video.swf
+
 sudo mv /etc/bigbluebutton/nginx/client /etc/bigbluebutton/nginx/client.old
 sudo mv ~/Script_install_video/client /etc/bigbluebutton/nginx/
 sudo chmod 755 /etc/bigbluebutton/nginx/client
