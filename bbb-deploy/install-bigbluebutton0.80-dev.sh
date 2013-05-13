@@ -1,11 +1,10 @@
 
-
 #!/bin/bash
 
 
 #Cac buoc cai dat BBB0.8 DEV
 
-bbb-conf --setup-dev tools
+video-conf --setup-dev tools
 
 echo "------------source ~/.profile-----------------"
 
@@ -25,7 +24,7 @@ cd ~/dev/bigbluebutton
 git checkout -b my-bbb-branch v0.8
 
 
-bbb-conf --setup-dev client
+video-conf --setup-dev client
 
 echo "#-------------------------Thay doi code Devlopment-----------------------"
 
@@ -45,6 +44,7 @@ echo "------------Build langue -----------------"
 
 ant locales
 
+cd
 
 echo "#-------------------------Thay doi giao dien ben Devlopment-----------------------"
 
