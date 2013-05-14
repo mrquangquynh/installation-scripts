@@ -64,7 +64,11 @@ sudo mv ~/Script_install_video/bbb-dev0.80/client_dev /etc/bigbluebutton/nginx/
 sudo chmod 755 /etc/bigbluebutton/nginx/client_dev
 
 
-
+sudo chown -R bkippbx /home/bkippbx/dev/bigbluebutton/bigbluebutton-client/bin/conf
+sudo chown -R bkippbx /home/bkippbx/dev/bigbluebutton/bigbluebutton-client/bin/branding
+sudo chown -R bkippbx /home/bkippbx/dev/bigbluebutton/bigbluebutton-client/bin/lib
+sudo chown -R bkippbx /home/bkippbx/dev/bigbluebutton/bigbluebutton-client/bin/video.html
+sudo chown -R bkippbx /home/bkippbx/dev/bigbluebutton/bigbluebutton-client/bin/LayoutModule.swf
 
 #Chuyển về BBB thường dùng   :
 #              $   sudo ln -s -f /etc/bigbluebutton/nginx/client /etc/bigbluebutton/nginx/client.nginx
