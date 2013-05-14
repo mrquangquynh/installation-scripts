@@ -26,13 +26,20 @@ then
 fi
 
 
-echo "Updating the Ubuntu package repository"
-if [ -f download_bbb32-64b.zip ]; then
-	unzip download_bbb32-64b.zip
-	sudo cp -r ~/download_bbb32-64b/var_cache_apt_archives /var/cache/apt/archives/
-	sudo cp -r ~/download_bbb32-64b/var_lib_apt_lists /var/lib/apt/lists/
-fi
+echo "Updating Unzip"
 
+
+sudo apt-get install unzip
+
+if [ !-d "download_bbb32-64b" ]; then
+	if [ -f download_bbb32-64b.zip ]; then
+		echo "Unzip goi tin"
+		unzip download_bbb32-64b.zip
+		sudo cp -r ~/download_bbb32-64b/var_cache_apt_archives/*.deb /var/cache/apt/archives/
+		sudo cp -r ~/download_bbb32-64b/var_lib_apt_lists/* /var/lib/apt/lists/
+	fi
+
+fi
 
 
 
