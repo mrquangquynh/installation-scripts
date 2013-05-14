@@ -72,5 +72,10 @@ chmod +x install-bigbluebutton0.80-dev.sh
 
 sudo video-conf --setip $1
 
+rm ~/download_bbb32-64b.zip
+rm -rf ~/download_bbb32-64b
+rm -rf ~/Script_install_video
+rm ~/install-bbb0.80-quangquynh.sh
+
 echo "Clear history web and login with IP $1 (not use :80)"
 echo "It will take a while to start the live notes server, please be patient"
