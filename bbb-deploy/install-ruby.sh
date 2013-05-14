@@ -10,8 +10,13 @@ echo "Updating the Ubuntu package repository"
 sudo apt-get update > /dev/null
 sudo apt-get -y install zlib1g-dev libssl-dev libreadline5-dev libyaml-dev build-essential bison checkinstall libffi5 gcc checkinstall libreadline5 libyaml-0-2
 
+sudo cp ~/Script_install_video/ruby-1.9.2-p290.tar.gz /tmp/
 cd /tmp
-wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p290.tar.gz
+
+if [ ! -f ruby-1.9.2-p290.tar.gz ]; then
+    wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p290.tar.gz	
+fi
+
 tar xvzf ruby-1.9.2-p290.tar.gz
 cd ruby-1.9.2-p290
 ./configure --prefix=/usr\
