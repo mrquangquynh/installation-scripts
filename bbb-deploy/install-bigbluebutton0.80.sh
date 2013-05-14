@@ -66,10 +66,10 @@ sudo cp /var/lib/tomcat6/webapps/demo/bbb_api_conf.jsp /var/lib/tomcat6/webapps/
 sudo mkdir /var/lib/tomcat6/webapps/demo/demo.old
 sudo mv /var/lib/tomcat6/webapps/demo/*.jsp /var/lib/tomcat6/webapps/demo/demo.old/
 
-sudo rm /var/lib/tomcat6/webapps/demo/css
-sudo rm /var/lib/tomcat6/webapps/demo/js
-sudo rm /var/lib/tomcat6/webapps/demo/images
-sudo rm /var/lib/tomcat6/webapps/demo/pdfs
+sudo rm -rf /var/lib/tomcat6/webapps/demo/css
+sudo rm -rf /var/lib/tomcat6/webapps/demo/js
+sudo rm -rf /var/lib/tomcat6/webapps/demo/images
+sudo rm -rf /var/lib/tomcat6/webapps/demo/pdfs
 sudo rm /var/lib/tomcat6/webapps/demo/polling.gif
 sudo rm /var/lib/tomcat6/webapps/demo/BigBlueButton.pptx
 
