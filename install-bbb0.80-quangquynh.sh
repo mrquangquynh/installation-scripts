@@ -31,7 +31,7 @@ echo "Updating Unzip"
 
 sudo apt-get install unzip
 
-if [ !-d "download_bbb32-64b" ]; then
+if [ ! -d "download_bbb32-64b" ]; then
 	if [ -f download_bbb32-64b.zip ]; then
 		echo "Unzip goi tin"
 		unzip download_bbb32-64b.zip
@@ -72,5 +72,5 @@ chmod +x install-bigbluebutton0.80-dev.sh
 
 sudo video-conf --setip $1
 
-echo "Restart the server to finish the installation"
+echo "Clear history web and login with IP $1 (not use :80)"
 echo "It will take a while to start the live notes server, please be patient"
