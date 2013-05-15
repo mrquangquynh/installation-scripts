@@ -25,9 +25,10 @@ then
 	print_usage
 fi
 
-sudo apt-get -y update
+
 echo "Updating Unzip"
 
+sudo apt-get -y update
 sudo apt-get install unzip
 
 if [ ! -d "download_bbb32-64b" ]; then
