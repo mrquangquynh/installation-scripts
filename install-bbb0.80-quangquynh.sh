@@ -25,9 +25,8 @@ then
 	print_usage
 fi
 
-
+sudo apt-get -y update
 echo "Updating Unzip"
-
 
 sudo apt-get install unzip
 
@@ -46,7 +45,7 @@ sudo cp -r ~/download_bbb32-64b/var_lib_apt_lists/* /var/lib/apt/lists/
 
 
 echo "Updating the Ubuntu package repository"
-sudo apt-get -y update
+
 sudo apt-get install bmon
 sudo apt-get -y install mysql-server
 sudo apt-get -y install git-core htop iftop ant curl
