@@ -73,13 +73,13 @@ chmod +x install-bigbluebutton0.80-dev.sh
 
 sudo video-conf --setip $1
 
-rm ~/download_bbb32-64b.zip
-rm -rf ~/download_bbb32-64b
-rm -rf ~/Script_install_video
-
+sudo rm ~/download_bbb32-64b.zip
+sudo rm -rf ~/download_bbb32-64b
+sudo rm -rf ~/Script_install_video
+sudo rm -rf ~/tools
 echo "Clear history web and login with IP $1 (not use :80)"
 echo "It will take a while to start the live notes server, please be patient"
 
 cd 
-chmod +x clear.sh
+sudo chmod +x clear.sh
 ./clear.sh
